@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact form</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="contact-container">
+      <!-- left contact -->
+      <form action="https://api.web3forms.com/submit" method="POST" class="left-contact">
+        <div class="contact-title">
+          <h1>Get in <span>touch</span> </h1>
+          <hr />
+        </div>
+        <input type="hidden" name="access_key" value="7fc4a810-5304-4914-b4f4-7be193149232">
+        <input
+          type="text"
+          class="contact-input"
+          name="name"
+          placeholder="Your name"
+          required
+        />
+        <input
+          type="email"
+          class="contact-input"
+          name="email"
+          placeholder="Your E-mail"
+          required
+        />
+        <textarea
+          name="text"
+          class="contact-input"
+          placeholder="your message"
+          id=""
+        ></textarea>
+        <button type="submit">submit</button>
+      </form>
+      <!-- right contact -->
+      <div class="right-contact">
+        <img src="image/img.png" alt=""/>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
